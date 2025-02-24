@@ -9,34 +9,53 @@ html {
 		/* Standard text-settings below */
 	font-size: 1em;
     line-height: 1.4em;
-	background-color: darkslateblue;
-	color: darkblue;	
 }
+
+
+
 
 body {
 	font-family:'Courier New', Courier, monospace;
+	background-color: rgb(58, 28, 114);
+	color: slategray;
+	margin: 100px;
 	
 }
 
-div#container {
-	margin:75px;
-	width:auto;
-	padding:20px;
-	background-color:lavender;	
+
+#container {
+	border: 2px solid black;
+	background: lavender;
+	width: 90%;
+	max-width: 2000px;
+	margin:auto;
+	padding-left: 10px;
 }
 
-header {
-	font-family:Helvetica, Arial;
-	font-size: 1.5em;
-	background-color:rgb(247, 247, 255);
-	padding: 5px;
+ul {
+	list-style: none;
+	padding-left: 10px;
 }
 
-footer p{
-	font-family: Helvetica, Arial;
-	font-size: 0.5em;
-	background-color: rgb(247, 247, 255);
-	padding:5px;
+a {
+	color: maroon;
 }
 
+a:hover {
+	color: red;
+}
 
+figure {
+	margin: 15px;
+	background:black;
+	padding: 10px;
+}
+
+figure img {
+	width: 90%;
+	max-width: 800pxss;
+}
+
+figcaption, footer {
+	font-size: .75em;
+}
