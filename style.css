@@ -13,173 +13,49 @@ html {
 
 
 
+
 body {
-	background:darkviolet;
+	font-family:'Courier New', Courier, monospace;
+	background-color: rgb(58, 28, 114);
+	color: slategray;
+	margin: 100px;
 	
 }
 
 
-#square {
-	width: 100px;
-	height: 100px;
-	background: rgb(120, 120, 202);
-	position: absolute;
-	top: 50px;
-	left: 50px;
-	animation: spin 3s linear infinite;
-	transition: all 0.5s ease-in-out;
+#container {
+	border: 2px solid black;
+	background: lavender;
+	width: 90%;
+	max-width: 2000px;
+	margin:auto;
+	padding-left: 10px;
 }
 
-#square:hover {
-	transform: scale(1.5) rotate(45deg);
-	background: rgb(214, 214, 170);
-	border-radius: 10px;
-	height: 200px;
-	width: 300px;
+ul {
+	list-style: none;
+	padding-left: 10px;
 }
 
-#circle {
-	width: 100px;
-	height: 100px;
-	background: rgb(194, 1, 1);
-	border-radius: 50%;
-	position: absolute;
-	top: 200px;
-	left: 200px;
-	animation: zoom 2s ease-in-out infinite alternate;
-	transition: all 0.5s ease-in-out;
+a {
+	color: maroon;
 }
 
-#circle:hover {
-	transform: scale(2.5);
-	background: orange;
-	width: 150px;
+a:hover {
+	color: red;
 }
 
-#triangle {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid green;
-	position: absolute;
-	top: 350px;
-	left: 100px;
-	transition: all 0.5s ease-in-out;
+figure {
+	margin: 15px;
+	background:black;
+	padding: 10px;
 }
 
-#triangle:hover {
-	border-bottom: 100px solid blue;
-	transform: rotate(180deg);
+figure img {
+	width: 90%;
+	max-width: 800pxss;
 }
 
-#diamond {
-	width: 100px;
-	height: 100px;
-	background: purple;
-	transform: rotate(45deg);
-	position: absolute;
-	top: 400px;
-	left: 300px;
-	animation: spin 4s linear infinite;
-	transition: all 0.5s ease-in-out;
-}
-
-#diamond:hover {
-	background: pink;
-	transform: rotate(90deg) scale(1.2);
-}
-
-#hexagon {
-	width: 300px;
-	height: 255px;
-	background: cyan;
-	position: absolute;
-	top: 100px;
-	left: 400px;
-	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-	animation: bounce 2s infinite alternate;
-	transition: all 0.8s ease-in-out;
-
-}
-
-#hexagon:hover {
-	transform: scale(0.5);
-	width: 150px;
-	height: 100px;
-}
-
-#oval {
-	width: 120px;
-	height: 60px;
-	background: pink;
-	border-radius: 50%;
-	position: absolute;
-	top: 300px;
-	left: 500px;
-	animation: zoom 2s ease-in-out infinite alternate;
-}
-
-#pentagon {
-	width: 60px;
-	height: 60px;
-	background: orange;
-	clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-	position: absolute;
-	top: 450px;
-	left: 100px;
-	animation: spin 3s linear infinite;
-}
-
-#star {
-	width: 80px;
-	height: 80px;
-	background: gold;
-	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-	position: absolute;
-	top: 500px;
-	left: 300px;
-	animation: pulse 1.5s infinite alternate;
-}
-
-#trapezoid {
-	width: 120px;
-	height: 60px;
-	background: brown;
-	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-	position: absolute;
-	top: 550px;
-	left: 500px;
-	animation: zoom 2s ease-in-out infinite alternate;
-}
-
-#parallelogram {
-	width: 100px;
-	height: 50px;
-	background: teal;
-	transform: skew(20deg);
-	position: absolute;
-	top: 600px;
-	left: 200px;
-	animation: spin 3s linear infinite;
-}
-
-@keyframes spin {
-	from { transform: rotate(0deg); }
-	to { transform: rotate(360deg); }
-}
-
-@keyframes zoom {
-	from { transform: scale(1); }
-	to { transform: scale(1.5); }
-}
-
-@keyframes bounce {
-	from { transform: translateY(0); }
-	to { transform: translateY(-20px); }
-}
-
-@keyframes pulse {
-	from { transform: scale(1); }
-	to { transform: scale(1.3); }
+figcaption, footer {
+	font-size: .75em;
 }
