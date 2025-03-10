@@ -59,3 +59,11 @@ figure img {
 figcaption, footer {
 	font-size: .75em;
 }
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+
+
+
+} /* closes 1024px+ */
